@@ -1,8 +1,6 @@
 <?php
 
 require_once("../../global/library.php");
-ft_init_module_page();
+$module = FormTools\Modules::initModulePage("admin");
 
-// ------------------------------------------------------------------------------------------------
-
-ft_display_module_page("index.tpl");
+$module->displayPage("index.tpl");
